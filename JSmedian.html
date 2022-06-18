@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>cheking prinme even consonent </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <script >
+//Write code in JavaScript to search how many numbers are prime, and even.
+ //And also try to find out how many alphabet are vowels or consonants in a same array
+
+
+        const Allarray=[1,2,4,56,7,8,9,12,45,56,14,2,5,45,74,87,98,63,"a","e","i","b","c","d","f"]
+
+
+        const prime=[];
+        const even=[];
+        const vowels=[];
+        const consonants=[];
+console.log(vowels);
+console.log(even);
+console.log(consonants)
+console.log(prime)
+
+Allarray.forEach((e)=>{
+     if(e%2==0){
+        even.push(e);  //even code
+     }
+    else if(e=="a"){
+        vowels.push(e);  //vo
+    }else if(e=="e"){
+        vowels.push(e);
+    }else if(e=="i"){
+        vowels.push(e +"= vovel")
+    }else if(e=="o"){
+        vowels.push(e)
+    }else if(e=="u"){
+        vowels.push(e)
+    }else if(e%1==0){
+        prime.push(e)
+    }else{
+        consonants.push(e+"= consonent" );
+    }
+    //console.log(e);
+})
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

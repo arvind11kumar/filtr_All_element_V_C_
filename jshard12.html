@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>todolist</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <style>
+.outer{
+    display: flex;
+    justify-content: center;
+}
+.inner{
+    border: 1px solid black;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+}
+.btn_outer{
+display: flex;
+justify-content: center;
+padding-top: 40px;
+}
+   </style>
+    
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+        <label>Entrt your student name</label>
+        <input class="input" type="text" placeholder="name">
+        <div class="btn_outer">
+            <div><button class="btn">ADD Student</button></div>
+        </div>
+        </div>
+    </div>
+
+    <div class="outer">
+    <div>
+        <h2 >Your student list Below</h2> 
+    </div>
+    </div>
+
+    <div class="outer">
+    
+    <div class="updata"></div>
+
+</div>
+
+    <script >
+let input=document.querySelector(".input");
+let btn=document.querySelector(".btn");
+let updata=document.querySelector(".updata");
+
+btn.addEventListener("click",()=>{
+    let creh2=document.createElement("h2");
+creh2.innerText=input.value;
+updata.appendChild(creh2);
+
+
+creh2.addEventListener("click",()=>{
+    creh2.remove();
+})
+})
+
+
+    </script>
+</body>
+</html>
